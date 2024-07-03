@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>WebRTC Demo</title>
+  </head>
+  <body>
+    <h1>WebRTC Demo</h1>
+    <video id="localVideo" autoplay playsinline></video>
+    <video id="remoteVideo" autoplay playsinline></video>
+    <button id="startButton">Start</button>
+    <button id="callButton">Call</button>
+    <button id="hangupButton">Hang Up</button>
+
+    <script src="webrtc.js"></script>
+  </body>
+</html>
+
+<!-- 
+    要讓其他用戶也能加入這個 WebRTC 視訊服務，需要確保以下幾點：
+        1. 公開信令服務器：確保你的信令服務器是公開可訪問的，這樣其他用戶才能通過互聯網連接到它。
+           你需要在防火牆和路由器上打開相應的端口（例如 8080），並確保服務器有一個公共 IP 地址或域名。
+
+        2. 更新用戶端的信令服務器地址：在用戶端的 JavaScript 代碼中，更新信令服務器的地址，使用公共 IP 或域名。
+
+        3. 分享用戶端 URL：將 client-a.html 和 client-b.html 放在一個可以公開訪問的 web 伺服器上，並將 URL 分享給其他用戶。
+ -->
